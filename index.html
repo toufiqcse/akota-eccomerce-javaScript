@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Ecommerce Site</title>
+    <link rel="shortcut icon" href="assetes/images/akota-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assetes/fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="assetes/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assetes/css/style-footer.css" />
+
+    <style>
+      .btn {
+        --bs-btn-padding-x: 1.75rem !important;
+        margin-right: 55px !important;
+      }
+      .badge {
+        position: absolute !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!------------------------ navbar-------------------- -->
+    <nav class="navbar bg-light navbar-expand-md navbar-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><h2>M/S Akota Traders</h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Product</a>
+              <div class="dropdown-menu bg-light mt-lg-3">
+                <a href="#" class="dropdown-item">Electric</a>
+                <a href="#" class="dropdown-item">LED</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Fashion</a>
+                <a href="#" class="dropdown-item">Home Appliance</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">E-Shop</a>
+              <div class="dropdown-menu bg-light mt-lg-3">
+                <a href="#" class="dropdown-item">Laptop</a>
+                <a href="#" class="dropdown-item">SmartPhone</a>
+                <a href="#" class="dropdown-item">Air Condition</a>
+                <a href="#" class="dropdown-item">Refrigerator</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+          <!--------------------------- login-pannel-------------- -->
+          <li class="btn btn-primary me-4 rounded-5">
+            <a class="nav-link icon-user" href="registration-form.html"></a>
+          </li>
+          <!--------------------------- cart-box--------------- -->
+          <li class="btn btn-success rounded-5">
+            <a class="nav-link icon-shopping_basket" href="#"></a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <!--------------------------- search--------------- -->
+    <div class="container justify-content-center align-content-center">
+      <form class="d-flex my-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search" />
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+    </div>
+    <!----------------------------carousel----------------------------------------- -->
+    <div class="container">
+      <div class="carousel slide" id="slider1" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active"></li>
+          <li type="button" data-bs-target="#slider1" data-bs-slide-to="1"></li>
+          <li type="button" data-bs-target="#slider1" data-bs-slide-to="2"></li>
+          <li type="button" data-bs-target="#slider1" data-bs-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="assetes/images/walton-product-slider-home.jpg" alt="" class="d-block img-fluid" />
+            <div class="carousel-caption d-md-block">
+              <button class="btn btn-warning" value="Shop Now">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assetes/images/windows11 walton-slider.jpg" alt="" class="d-block img-fluid" />
+            <div class="carousel-caption d-sm-block">
+              <button class="btn btn-warning me-sm-5" value="Shop Now">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assetes/images/walton-phone-slider-3.jpg" alt="" class="d-block img-fluid" />
+            <div class="carousel-caption d-md-block">
+              <button class="btn btn-warning" value="Shop Now">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assetes/images/walton-home-product-akota.jpg" alt="" class="d-block img-fluid" />
+            <div class="carousel-caption d-block">
+              <button class="btn btn-warning" value="Shop Now">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <a href="#slider1" class="carousel-control-prev" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark"></span>
+        </a>
+        <a href="#slider1" class="carousel-control-next" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark"></span>
+        </a>
+      </div>
+    </div>
+    <!--------------------- new-collection--------------------- -->
+    <div class="card container mt-lg-3 mt-md-2 mt-sm-2 mt-xs-2 bg-light">
+      <h2 class="text-center">New Collection</h2>
+      <p class="text-center">Browse the huge variety of our products</p>
+      <nav class="nav justify-content-xl-center justify-content-md-center justify-content-sm-start text-black">
+        <a class="nav-link active" aria-current="page" href="#">Electronics</a>
+        <a class="nav-link" href="#">Home Accessories</a>
+        <a class="nav-link" href="#">Technology</a>
+      </nav>
+    </div>
+    <!--------------------- new-collection-product--------------------- -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-lg-4 mt-md-3 mt-sm-2 mt-xs-2">
+          <div class="card">
+            <div class="card-body bg-light">
+              <span class="badge text-bg-danger">Hot</span>
+              <img src="assetes/images/new-collection/moblie-collecton.png" alt="" />
+              <a href="#" class="btn btn-warning"> Shop </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-lg-4 mt-md-3 mt-sm-2 mt-xs-2">
+          <div class="card">
+            <div class="card-body bg-light">
+              <span class="badge text-bg-success">New</span>
+              <img src="assetes/images/new-collection/refrigrator-collection.png" alt="" />
+              <a href="#" class="btn btn-warning"> Shop </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-lg-4 mt-md-3 mt-sm-2 mt-xs-2">
+          <div class="card">
+            <div class="card-body bg-light">
+              <span class="badge text-bg-warning">Sale</span>
+              <img src="assetes/images/new-collection/led-collection.png" alt="" />
+              <a href="#" class="btn btn-warning"> Shop </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mt-lg-4 mt-md-3 mt-sm-2 mt-xs-2">
+          <div class="card">
+            <div class="card-body bg-light">
+              <span class="badge text-bg-danger">-16%</span>
+              <img src="assetes/images/new-collection/ac-collection.png" alt="" />
+              <a href="#" class="btn btn-warning"> Shop </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------------- footer------------------------------>
+
+    <footer class="footer-10 mt-lg-3 mt-sm-2 bg-gray">
+      <div class="container">
+        <div class="row mb-5 pb-3 no-gutters">
+          <div class="col-md-4 mb-md-0 mb-4 d-flex">
+            <div class="con con-1 w-100 py-5">
+              <div class="con-info w-100 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-call_made"></span>
+                </div>
+                <div class="text">
+                  <span>(+880) 1750-119633</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-0 mb-4 d-flex">
+            <div class="con con-2 w-100 py-5">
+              <div class="con-info w-100 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-envelope"></span>
+                </div>
+                <div class="text">
+                  <span>akotatraders8580@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-0 mb-4 d-flex">
+            <div class="con con-3 w-100 py-5">
+              <div class="con-info w-100 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="icon-location-arrow"></span>
+                </div>
+                <div class="text">
+                  <span>Chowmohoni Bazar, Amdai Sadar Joyprhat. 5900</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <div class="row">
+              <div class="col-md-4 mb-md-0 mb-4">
+                <h2 class="footer-heading">About</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="d-block">Out story</a></li>
+                  <li><a href="#" class="d-block">Awards</a></li>
+                  <li><a href="#" class="d-block">Our Team</a></li>
+                  <li><a href="#" class="d-block">Career</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 mb-md-0 mb-4">
+                <h2 class="footer-heading">Akota</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="d-block">Our services</a></li>
+                  <li><a href="#" class="d-block">Clients</a></li>
+                  <li><a href="#" class="d-block">Contact</a></li>
+                  <li><a href="#" class="d-block">Press</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 mb-md-0 mb-4">
+                <h2 class="footer-heading">Resources</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="d-block">Blog</a></li>
+                  <li><a href="#" class="d-block">Newsletter</a></li>
+                  <li><a href="#" class="d-block">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mb-md-0 mb-4">
+            <h2 class="footer-heading">Subscribe</h2>
+            <form action="#" class="subscribe-form">
+              <div class="form-group d-flex">
+                <input type="text" class="form-control rounded-left" placeholder="Enter email address" />
+                <button type="submit" class="form-control submit rounded-right">Subscribe</button>
+              </div>
+              <span class="subheading">Get your products updates in your mailbox</span>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-5 pt-4 border-top">
+          <div class="col-md-6 col-lg-8 mb-md-0 mb-4">
+            <p class="copyright mb-0">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved. | This template is made with <i class="icon-heart" aria-hidden="true"></i> by
+              <a href="#" target="_blank">Akota-traders.com</a>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4 text-md-right">
+            <ul class="ftco-footer-social p-0">
+              <li class="ftco-animate">
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="icon-twitter"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="icon-facebook"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="icon-instagram"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="icon-google"></span></a>
+              </li>
+
+              <li class="ftco-animate">
+                <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="icon-linkedin"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assetes/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="assetes/js/jquery-3.3.1.min.js"></script>
+    <script src="assetes/js/main.js"></script>
+    <script src="assetes/js/popper.min.js"></script>
+    <script src="assetes/js/bootstrap.min.js"></script>
+    <script src="assetes/js/popper.js"></script>
+  </body>
+</html>

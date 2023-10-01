@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to your account</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assetes/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="assetes/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/css/bootstrap.css" />
+    <link rel="shortcut icon" href="assetes/images/akota-logo.png" type="image/x-icon">
+    <style>
+        .social-login a{
+            text-decoration: none;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-block;
+        }
+        .social-login a.facebook{
+            background: #3b5998;
+        }
+        .social-login a.google{
+            background: #ea4335;
+        }
+        .social-login a.twitter{
+            background: #1da1f2;
+        }
+        .social-login{
+            box-sizing: border-box;
+        }
+        .social-login a span{
+            position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid mt-lg-3 mt-md-2" src="assetes/images/login-bg.webp" alt="" />
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center ">
+            <div class="col-md-8 ">
+              <div class="mb-4">
+                <h2 class="mt-sm-2 mt-lg-5 text-center">Sign in</h2>
+              </div>
+              <form action="#" method="get" class="">
+                <form action="#" method="post">
+              <div class="form-group first">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" required>
+
+              </div>
+              <div class="form-group last mb-4">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password">
+                
+              </div>
+              <div class="d-flex  mb-5 align-items-center">
+                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                  <input type="checkbox" checked="checked"/>
+                  <div class="control__indicator"></div>
+                </label>
+                <span class="ms-auto"><a href="forgot-password.html" class="caption-top">Forgot Password</a></span> 
+              </div>
+
+              <a href="index.html"><input type="button" value="Sign In" class="btn btn-block btn-primary w-100 "></a>
+
+              <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
+
+              <div class="social-login ">
+                <a href="https://web.facebook.com/toufiqcse7" class="facebook ">
+                  <span class=" icon-facebook mr-3"></span> 
+                </a>
+                <a href="https://twitter.com/i/flow/login" class="twitter">
+                  <span class="icon-twitter mr-3"></span> 
+                </a>
+                <a href="https://mail.google.com/" class="google">
+                  <span class="icon-google mr-3"></span> 
+                </a>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+   
+    <script src="assetes/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

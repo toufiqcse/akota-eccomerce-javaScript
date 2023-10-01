@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up to Your Account</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assetes/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <link rel="stylesheet" href="assetes/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/css/bootstrap.css" />
+    <link rel="shortcut icon" href="assetes/images/akota-logo.png" type="image/x-icon">
+    <style>
+   
+        .social-login a{
+            text-decoration: none;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-block;
+        }
+        .social-login a.facebook{
+            background: #3b5998;
+        }
+        .social-login a.google{
+            background: #ea4335;
+        }
+        .social-login a.twitter{
+            background: #1da1f2;
+        }
+        .social-login{
+            box-sizing: border-box;
+        }
+        .social-login a span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+      
+    </style>
+  </head>
+  <body class="">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid" src="assetes/images/undraw_remotely_2j6y.svg" alt="" />
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center  ">
+            <div class="col-md-8 ">
+              <div class="mb-4">
+                <h2 class="mt-sm-2 mt-lg-5 text-center">Sign Up</h2>
+              </div>
+              <form action="#" method="get" class="">
+                <form action="#" method="post">
+              <div class="form-group first mb-3 input-group">
+                <div class="input-group-prepend">
+                  <span for="username" class="input-group-text icon-user"></span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="@username" required>
+
+              </div>
+              <div class="form-group first mb-3 input-group">
+                <div class="input-group-prepend">
+                  <span for="email" class="input-group-text icon-envelope"></span>
+                </div>
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+
+              </div>
+              <div class="form-group mb-3 input-group">
+                <div class="input-group-prepend">
+                  <span for="password" class="input-group-text icon-lock"></span>
+                </div>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+                
+              </div>
+              <div class="form-group mb-3 input-group">
+                <div class="input-group-prepend">
+                  <span for="password" class="input-group-text icon-lock"></span>
+                </div>
+                <input type="password" class="form-control" id="password" placeholder="Repeat-Password">
+                
+              </div>
+              <div class="form-group mb-3 input-group">
+                <div class="input-group-prepend ">
+                  <span for="password" class="input-group-text icon-male"></span>
+                </div>
+                <select name="gender" id="gender" class="form-control">
+                  <option value="Male selected" class="text-muted">Select Gender....</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+
+              </div>
+              <div class="d-flex  mb-4 align-items-center mt-3">
+                <input type="checkbox" checked="checked" class="form-check-input"/>
+                <label class="control control--checkbox mb-0 ms-2 ms-sm-1 form-check-label"><span class="caption">I agree all statement</span>
+                  <!-- <div class="control__indicator"></div> -->
+                </label>
+                <span class="ms-3"><a href="https://startbootstrap.com/terms-and-conditions" class="caption-top">Terms & Conditions</a></span> 
+              </div>
+
+              <div class="d-flex">
+                <div class="w-25">
+                  <a href="index.html"><input type="button" value="Sign Up" class="btn btn-block btn-success w-100 "></a>
+                </div>
+              <div class="text-center  ms-auto">
+                <span class="me-2 text-muted">Already have an account</span><a class="btn btn-outline-info " href="login.html">login here</a>
+              </div>
+              </div>
+
+              
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+   
+    <script src="assetes/bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
